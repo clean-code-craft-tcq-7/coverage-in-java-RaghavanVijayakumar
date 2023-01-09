@@ -30,7 +30,6 @@ public class TypewiseAlertTest
       assertEquals(CoolingType.HI_ACTIVE_COOLING.upper_limit,45);
       assertEquals(CoolingType.MED_ACTIVE_COOLING.lower_limit,0);
       assertEquals(CoolingType.MED_ACTIVE_COOLING.upper_limit,40);
-      assertNotEquals(CoolingType.HI_ACTIVE_COOLING.upper_limit,50);
     }
     
     @Test
