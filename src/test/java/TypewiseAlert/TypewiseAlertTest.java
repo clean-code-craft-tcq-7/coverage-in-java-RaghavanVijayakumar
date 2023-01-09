@@ -1,10 +1,8 @@
 package TypewiseAlert;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 import org.junit.Test;
 
@@ -24,12 +22,12 @@ public class TypewiseAlertTest
     @Test
     public void assertCoolingTypelimit()
     {
-      assertEquals(CoolingType.PASSIVE_COOLING.upper_limit,35);
-      assertEquals(CoolingType.PASSIVE_COOLING.lower_limit,0);
-      assertEquals(CoolingType.HI_ACTIVE_COOLING.lower_limit,0);
-      assertEquals(CoolingType.HI_ACTIVE_COOLING.upper_limit,45);
-      assertEquals(CoolingType.MED_ACTIVE_COOLING.lower_limit,0);
-      assertEquals(CoolingType.MED_ACTIVE_COOLING.upper_limit,40);
+      assertSame(CoolingType.PASSIVE_COOLING.upper_limit,35);
+      assertSame(CoolingType.PASSIVE_COOLING.lower_limit,0);
+      assertSame(CoolingType.HI_ACTIVE_COOLING.lower_limit,0);
+      assertSame(CoolingType.HI_ACTIVE_COOLING.upper_limit,45);
+      assertSame(CoolingType.MED_ACTIVE_COOLING.lower_limit,0);
+      assertSame(CoolingType.MED_ACTIVE_COOLING.upper_limit,40);
     }
     
     @Test
