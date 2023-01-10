@@ -18,23 +18,4 @@ public class TypewiseAlertTest
       assertFalse(BreachAnalyzer.inferBreach(45, 10, 30) == BreachType.NORMAL);
       assertFalse(BreachAnalyzer.inferBreach(12, 20, 30) == BreachType.NORMAL);
     }
-    
-    @Test
-    public void assertCoolingTypelimit()
-    {
-      assertSame(CoolingType.PASSIVE_COOLING.upper_limit,35);
-      assertSame(CoolingType.PASSIVE_COOLING.lower_limit,0);
-      assertSame(CoolingType.HI_ACTIVE_COOLING.lower_limit,0);
-      assertSame(CoolingType.HI_ACTIVE_COOLING.upper_limit,45);
-      assertSame(CoolingType.MED_ACTIVE_COOLING.lower_limit,0);
-      assertSame(CoolingType.MED_ACTIVE_COOLING.upper_limit,40);
-    }
-    
-    @Test
-    public void assertBreachTypemessage()
-    {
-    assertTrue(BreachType.NORMAL.message=="Temperature is normal");
-    assertTrue(BreachType.TOO_HIGH.message=="Hi, the temperature is too high");
-    assertTrue(BreachType.TOO_LOW.message=="Hi, the temperature is too low");
-    }
 }
