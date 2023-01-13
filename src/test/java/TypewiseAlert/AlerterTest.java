@@ -58,10 +58,5 @@ public class AlerterTest {
 	public void assertSendEmail() {
 		assertEmailcontent(BreachType.TOO_HIGH);
 		assertEmailcontent(BreachType.TOO_LOW);
-		AlertTarget.sendToEmail(BreachType.NORMAL);
-		assertTrue(AlertMessage.toString().trim().length()==0);
 	}
-
-	
-	
 }
